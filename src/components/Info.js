@@ -2,11 +2,11 @@ import React from 'react'
 
 const Info = () => 
 
-    <footer class="info">
+    <footer className="info">
         <small>
             Made with&nbsp;
-            <span class="heart fas fa-heart" aria-hidden="true"></span> 
-            <span class="sr-only">love</span>
+            <span className="heart fas fa-heart" aria-hidden="true"></span> 
+            <span className="sr-only">love</span>
             &nbsp;by&nbsp;
             <a 
                 href="https://github.com/davidoluseun" 
