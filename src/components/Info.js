@@ -4,10 +4,10 @@ const Info = () =>
 
     <footer className="info">
         <small>
-            Made with&nbsp;
+            Made with{" "}
             <span className="heart fas fa-heart" aria-hidden="true"></span> 
-            <span className="sr-only">love</span>
-            &nbsp;by&nbsp;
+            <span className="sr-only">love</span>{" "}
+            by{" "}
             <a 
                 href="https://github.com/davidoluseun" 
                 target="_blank" rel="noopener noreferrer"
