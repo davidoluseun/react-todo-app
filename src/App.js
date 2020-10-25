@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import TodosForm from './components/TodosForm'
 import AllTodos from './components/AllTodos'
 import CompletedTodos from './components/CompletedTodos'
@@ -99,7 +99,7 @@ class App extends Component {
         const completedTodos = todos.filter(todo => todo.status === 'completed')
 
         return (
-            <BrowserRouter>
+            <>
                 <div className="content-wrap">
             
                     <h1 className="app-title">Todo App</h1>
@@ -153,7 +153,7 @@ class App extends Component {
                 
                 </div>
                 <Info />
-            </BrowserRouter>
+            </>        
              
         )
     }
