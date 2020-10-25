@@ -5,7 +5,7 @@ import AllTodos from './components/AllTodos'
 import CompletedTodos from './components/CompletedTodos'
 import ActiveTodos from './components/ActiveTodos'
 import TodosDetails from './components/TodosDetails'
-import Info from './components/Info'
+import Footer from './components/Footer'
 
 class App extends Component {
 
@@ -152,7 +152,7 @@ class App extends Component {
                     />
                 
                 </section>
-                <Info />
+                <Footer />
             </>        
              
         )
