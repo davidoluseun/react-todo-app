@@ -100,7 +100,7 @@ class App extends Component {
 
         return (
             <>
-                <div className="content-wrap">
+                <section className="content-wrap">
             
                     <h1 className="app-title">Todo App</h1>
 
@@ -151,7 +151,7 @@ class App extends Component {
                         onClear={this.handleClearCompleted}
                     />
                 
-                </div>
+                </section>
                 <Info />
             </>        
              
