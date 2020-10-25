@@ -6,6 +6,7 @@ import CompletedTodos from './components/CompletedTodos'
 import ActiveTodos from './components/ActiveTodos'
 import TodosDetails from './components/TodosDetails'
 import Footer from './components/Footer'
+import Headline from './components/Headline'
 
 class App extends Component {
 
@@ -101,16 +102,8 @@ class App extends Component {
         return (
             <>
                 <section className="content-wrap">
-            
-                    <h1 className="app-title">Todo App</h1>
 
-                    {!todos.length ? 
-                        <p>You do not have a todo right now.<br />
-                            Enter a todo in the text field below and click 'Enter'
-                        </p> 
-                        : 
-                        null
-                    }
+                    <Headline todos={todos} />
 
                     <div className="todos">
                         <TodosForm 
@@ -152,6 +145,7 @@ class App extends Component {
                     />
                 
                 </section>
+                
                 <Footer />
             </>        
              
