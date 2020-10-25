@@ -111,29 +111,41 @@ class App extends Component {
                                 handleSubmit={this.handleSubmit} 
                         />
                         <Switch>
-                            <Route exact path="/" render={ props =>
-                                <AllTodos 
-                                    todos={todos} 
-                                    onCheck={this.handleCheck}
-                                    onDelete={this.handleDelete}
-                                />
-                            }/>
+                            <Route 
+                                exact path="/" 
+                                render={ props =>
+                                    <AllTodos 
+                                        todos={todos} 
+                                        onCheck={this.handleCheck}
+                                        onDelete={this.handleDelete}
+                                        {...props}
+                                    />
+                                }
+                            />
 
-                            <Route path="/completed" render={ props =>
-                                <CompletedTodos
-                                    completedTodos={completedTodos}
-                                    onCheck={this.handleCheck}
-                                    onDelete={this.handleDelete}
-                                />
-                            }/>
+                            <Route 
+                                path="/completed" 
+                                render={ props =>
+                                    <CompletedTodos
+                                        completedTodos={completedTodos}
+                                        onCheck={this.handleCheck}
+                                        onDelete={this.handleDelete}
+                                        {...props}
+                                    />
+                                }
+                            />
 
-                            <Route path="/active" render={ props =>
-                                <ActiveTodos
-                                    activeTodos={activeTodos}
-                                    onCheck={this.handleCheck}
-                                    onDelete={this.handleDelete}
-                                />
-                            }/>
+                            <Route 
+                                path="/active" 
+                                render={ props =>
+                                    <ActiveTodos
+                                        activeTodos={activeTodos}
+                                        onCheck={this.handleCheck}
+                                        onDelete={this.handleDelete}
+                                        {...props}
+                                    />
+                                }
+                            />
                         </Switch>
                     </div>
 
@@ -145,7 +157,7 @@ class App extends Component {
                     />
                 
                 </section>
-                
+
                 <Footer />
             </>        
              
