@@ -2,113 +2,113 @@
 -------------------------------- */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
-        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-        'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-size: 16px;
-    line-height: 1.2;
-    background: #f5f5f5;
-    overflow-x: hidden;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  line-height: 1.2;
+  background: #f5f5f5;
+  overflow-x: hidden;
 }
 
-h1, h2 {
-    margin: 0 0 16px;
-    font-weight: 500;
+h1,
+h2 {
+  margin: 0 0 16px;
+  font-weight: 500;
 }
 
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .task-wrap button,
 .actions-btn,
 .delete-btn {
-    user-select: none;
-    cursor: pointer;
+  user-select: none;
+  cursor: pointer;
 }
 
 .todo-input:focus,
 .delete-btn:focus,
 .actions-btn:focus,
 .task-wrap button:focus {
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 .content-wrap {
-    padding: 20px 20px 0;
-    max-width: 600px;
-    margin: 0 auto;
+  padding: 20px 20px 0;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .todos {
-	background: #fff;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2),
-	            0 25px 50px 0 rgba(0, 0, 0, .1);
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .todo-input {
-    border: none;
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    padding: 16px;
-    border-radius: 4px;
-    background: #fff;
-    position: relative;
-    border-bottom: 1px solid #ededed;
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 4px;
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #ededed;
 }
 
 .app-title {
-    font-size: 32px;
-    color: #daa520;
-    text-align: center;
+  font-size: 32px;
+  color: #daa520;
+  text-align: center;
 }
 
 /* Todo Lists
 ------------------------------------ */
 
 .todo-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
 }
 
 .todo-list li {
-    display: flex;
-    position: relative;
-    padding: 10px;
-    border-bottom: 1px solid #ededed;
+  display: flex;
+  position: relative;
+  padding: 10px;
+  border-bottom: 1px solid #ededed;
 }
-  
+
 .task-wrap {
-    display: flex;
-    flex-basis: 82%;
+  display: flex;
+  flex-basis: 82%;
 }
 
 .task-wrap button {
-    background: transparent;
-    border: 0;
-    border-radius: 4px;
-    padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  padding: 0;
 }
 
 .task-wrap div {
-    padding-left: 16px;
-    align-self: center;
+  padding-left: 16px;
+  align-self: center;
 }
 
 .completed {
@@ -117,31 +117,30 @@ a:hover {
 }
 
 .delete-btn {
-    font-size: inherit;
-    line-height: inherit;
-    border: 0;
-    border-radius: 4px;
-    position: absolute;
-    right: 15px;
-    top: -8px;
-    transform: translateY(50%);
-    border-color: transparent;
-    background: transparent;
-    padding: 8px;
+  font-size: inherit;
+  line-height: inherit;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  right: 15px;
+  top: -8px;
+  transform: translateY(50%);
+  border-color: transparent;
+  background: transparent;
+  padding: 8px;
 }
 
 .delete-btn span {
-    color: #dc3545;
+  color: #dc3545;
 }
 
 /* Todo Details
 ------------------------------- */
 
 .todo-details {
-    background: #fff;
-    padding: 16px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2), 
-                0 25px 50px 0 rgba(0, 0, 0, .1);
+  background: #fff;
+  padding: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .details-title {
@@ -150,92 +149,90 @@ a:hover {
 
 .active-count,
 .filters {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .actions-btn {
-    font-size: 14px;
-    padding: 6px 10px;
-    color: #fff;
-    min-width: 165px;
-    background-color: #007bff;
-    border: 1px solid #007bff;
-    border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 10px;
+  color: #fff;
+  min-width: 165px;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 4px;
 }
 
 .actions-btn:hover,
 .actions-btn:focus {
-    background-color: #0069d9;
-    border-color: #0062cc;
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
 .filters a {
-    display: inline-block;
-    padding: 8px;
-    margin-left: -8px;
+  display: inline-block;
+  padding: 8px;
+  margin-left: -8px;
 }
 
 /* Footer
 ---------------------------------- */
 
 .info {
-    padding: 32px 16px 16px;
-    text-align: center;
+  padding: 32px 16px 16px;
+  text-align: center;
 }
 
 .heart {
-    color: #dc3545;
+  color: #dc3545;
 }
 
 /* Media Queries
 -------------------------------- */
 
 @media (min-width: 500px) {
-    
-    .todo-details {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .todo-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .todo-details div {
-        flex-basis: 50%;
-    }
+  .todo-details div {
+    flex-basis: 50%;
+  }
 
-    .active-count {
-        padding-top: 0;
-    }
+  .active-count {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 900px) {
+  .todo-input,
+  .todo-list {
+    font-size: 24px;
+  }
 
-    .todo-input,
-    .todo-list {
-        font-size: 24px;
-    }
+  .todo-details {
+    flex-wrap: nowrap;
+  }
 
-    .todo-details {
-        flex-wrap: nowrap;
-    }
-    
-    .todo-details div {
-        flex-basis: 33.3333%;
-    }
+  .todo-details div {
+    flex-basis: 33.3333%;
+  }
 
-    .actions {
-        padding-right: 30px;
-    }
-  
-    .active-count {
-        padding: 0 15px;
-    }
+  .actions {
+    padding-right: 30px;
+  }
 
-    .filters {
-        padding-left: 30px;
-        padding-top: 0;
-    }
+  .active-count {
+    padding: 0 15px;
+  }
 
-    .filters a {
-        display: inline-block;
-        padding-left: 8px;
-    }
+  .filters {
+    padding-left: 30px;
+    padding-top: 0;
+  }
+
+  .filters a {
+    display: inline-block;
+    padding-left: 8px;
+  }
 }
