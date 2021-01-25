@@ -101,8 +101,8 @@ class App extends Component {
 
           <div className="todos">
             <TodosForm
-              handleChange={this.handleChange}
-              handleSubmit={this.handleSubmit}
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit}
             />
             <Switch>
               <Route
@@ -147,8 +147,8 @@ class App extends Component {
           <TodosDetails
             todos={todos}
             activeTodos={activeTodos}
-            onMarkAll={this.handleMarkAllCompleted}
-            onClear={this.handleClearCompleted}
+            onMarkAllCompleted={this.handleMarkAllCompleted}
+            onClearCompleted={this.handleClearCompleted}
           />
         </section>
 

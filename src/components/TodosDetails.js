@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const TodosDetails = ({ todos, activeTodos, onMarkAll, onClear }) => {
+const TodosDetails = ({ todos, activeTodos, onMarkAllCompleted, onClearCompleted }) => {
   // If todos is empty return null
   if (!todos.length) return null;
 
@@ -10,12 +10,12 @@ const TodosDetails = ({ todos, activeTodos, onMarkAll, onClear }) => {
     <div className="todo-details">
       <div className="actions">
         <h2 className="details-title">Actions</h2>
-        <button onClick={onMarkAll} className="actions-btn">
+        <button onClick={onMarkAllCompleted} className="actions-btn">
           Mark All Completed
         </button>
         <br />
         <br />
-        <button onClick={onClear} className="actions-btn">
+        <button onClick={onClearCompleted} className="actions-btn">
           Clear Completed
         </button>
       </div>

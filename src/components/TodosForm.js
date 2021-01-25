@@ -13,11 +13,11 @@ export class TodosForm extends Component {
   }
 
   render() {
-    const { handleChange, handleSubmit } = this.props;
+    const { onChange, onSubmit } = this.props;
 
     return (
       <form
-        onSubmit={(e) => handleSubmit(e)}
+        onSubmit={(e) => onSubmit(e)}
         className="todo-form"
         autoComplete="off"
       >
@@ -27,7 +27,7 @@ export class TodosForm extends Component {
           type="text"
           name="todoInput"
           placeholder="What needs to be done?"
-          onChange={(e) => handleChange(e)}
+          onChange={(e) => onChange(e)}
         />
       </form>
     );
